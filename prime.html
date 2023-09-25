@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number</title>
+</head>
+<!-- a code that print out all the prime number from 1-100 -->
+<body>
+    <script>
+        var num = 200;
+
+        document.write("<h3>prime numbers between 1 and" + num +"!</h3>")
+        for (let i=2; i<=num; i++){
+            flag=true;
+            for (let j=2; j<=i-1; j++){
+                if(i % j== 0){
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) {
+                document.write(i + "<br>")
+            }
+        }
+    </script>
+    
+</body>
+</html>
